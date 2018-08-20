@@ -60,7 +60,8 @@ Plugin 'groenewege/vim-less'
 Plugin 'sophacles/vim-bundle-mako'
 Plugin 'tpope/vim-markdown'
 Plugin 'nginx.vim'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()
 
@@ -237,4 +238,7 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+map <leader><space> :FixWhitespace<cr>
 
